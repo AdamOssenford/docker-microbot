@@ -1,6 +1,9 @@
 FROM gliderlabs/alpine
-MAINTAINER  Patrick O'Connor <patrick@dontreboot.me>
-
+##########################################################
+# FORKED FROM dontrebootme
+#MAINTAINER  Patrick O'Connor <patrick@dontreboot.me>
+##########################################################
+MAINTAINER Adam Ossenford <AdamOssenford@gmail.com>
 # Install nginx, make it work well with docker, and get it ready to run
 RUN apk-install nginx && echo "daemon off;" >> /etc/nginx/nginx.conf \
  && mkdir -p /tmp/nginx/client-body
